@@ -1,7 +1,6 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/detail_movie.dart';
-import 'package:flutter_app/list_movie.dart';
+import 'package:flutter_app/ui/detail_movie.dart';
+import 'package:flutter_app/ui/list_movie.dart';
 //import 'text_and_icon_button.dart';
 
 class App extends StatelessWidget{
