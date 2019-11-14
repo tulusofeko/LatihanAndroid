@@ -38,9 +38,9 @@ class MyAppState extends State<MyApp>{
     // TODO: implement build
     return Scaffold(
       key: keyScaffold,
-      appBar: AppBar(
-        title: Text('Latihan'),
-      ),
+//      appBar: AppBar(
+//        title: Text('Latihan'),
+//      ),
       body: Stack(
         children: <Widget>[
           Container(
@@ -77,10 +77,12 @@ class MyAppState extends State<MyApp>{
                   decoration: InputDecoration(hintText: 'password'),
                 ),
               ),
-              RaisedButton(
-                onPressed: () => checkUser(usernameController.text, passwordController.text),
-                color: Colors.amber[300],
-                child: Text('LOGIN',style: TextStyle(color: Colors.white),),
+              Flexible(
+                child: RaisedButton(
+                  onPressed: () => checkUser(usernameController.text, passwordController.text),
+                  color: Colors.amber[300],
+                  child: Text('LOGIN',style: TextStyle(color: Colors.white),),
+                ),
               )
             ],
           ),
